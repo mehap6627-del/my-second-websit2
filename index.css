@@ -1,0 +1,868 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:white;
+    color: black;
+}
+.nav{
+    background-color: black;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 120000;
+    font-size: 22px;
+}
+.nav h2 span{
+    color: gold;
+}
+.nav ul{
+    display: flex;
+    gap: 55px;
+}
+.nav ul li a{
+    color: white;
+    font-size: 22px;
+    position:relative;
+    transition: 0.4s;
+}
+.nav ul li a::after{
+      content:"";
+    position: absolute;
+    background-color: gold;
+    width: 0;
+    height: 3px;
+    bottom: -8px;
+    right: 0;
+    transition: 0.4s;
+}
+.nav ul li a:hover{
+color: gold;    
+}
+.nav ul li a:hover::after{
+    width: 100%;
+}
+
+.nav .go{
+   padding: 15px 10px;
+   border-radius: 10px;
+   color: black;
+   background-color: gold;
+   font-size: 18px;
+   transition: 0.3s;
+}
+.nav .go:hover{
+color: white;
+background-color: gray;
+}
+.home{
+background-image:url(pexels-mehedi-35296240.jpg) ; 
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+    display: flex;
+    /* align-items: center; */
+    color: #fff;
+    padding: 300px 5%;
+}
+.home-o{
+   max-width: 750px;
+}
+.home-o h6{
+    padding: 30px 0;
+    font-size: 15px;
+    color: gold;
+}
+.home-o h1{
+  
+    font-size: 65px;
+}
+.home-o .h{
+    margin-bottom: 22px;
+} 
+
+.home-o .h span{
+    color: gold;
+}
+.home-o p{
+    font-size: 17px;
+    color: #ccc;
+    margin-bottom: 36px;
+}
+.home-btn{
+   display: flex;
+   margin-bottom: 20px;
+   border-radius: 10px;  
+   font-size: 20px;
+   gap: 28px;
+}
+.home-btn .go{
+    border-radius: 10px;
+    padding: 15px 6px;
+    color: black;
+    background-color: gold;
+    transition: 0.3s;
+}
+.home-btn .go:hover{
+    color: #fff;
+    background-color: grey;
+}
+.home-btn .video{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px 6px;
+}
+.fast{
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+   
+}
+
+.service{
+    background-color: #f7f7f7;
+    padding: 100px 8%;
+}
+
+.service-o{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service-o h6{
+    font-size: 23px;
+    color: gold;
+}
+.service-o h1{
+    font-size: 40px;
+    color: black;
+}
+.service-o p{
+    color:rgba(0, 0, 0, 0.504);
+    font-size: 20px;
+}
+.service-u{
+    display: grid;
+    grid-template-columns: 380px auto;
+    gap: 33px;
+}
+.service-card{
+    background-color: black;
+    border-radius: 10px;
+    padding: 40px 30px;
+    color: #f7f7f7;
+     border:2px solid #EEE ;
+    transition: 0.4S;
+}
+.service-card:hover{
+    transform: translate(-12px);
+    border-color: gold;
+    box-shadow: 0 10px 30px rgba(0,0,0, 0.8);
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.service-card h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.service-card p{
+     color: #777;
+     line-height: 1.8;
+     font-size: 17px;
+    margin-bottom: 20px;
+}
+.service-card a{
+     font-weight: bold;
+    color: gold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.mop{
+     display: grid;
+    grid-template-columns: 380px auto;
+    gap: 33px;
+}
+.mop-card{
+  border-radius: 10px;
+  background-color: #fff;
+    padding: 40px 30px;
+    color: #f7f7f7;
+     border:2px solid #EEE ;
+    transition: 0.4S;   
+}
+.mop-card:hover{
+    transform: translate(-12px);
+    border-color: gold;
+    box-shadow: 0 10px 30px rgba(0,0,0, 0.8);
+}
+.mop-card h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: black;
+}
+.mop-card p{
+     color: rgba(0, 0, 0, 0.462);
+     line-height: 1.8;
+     font-size: 19px;
+    margin-bottom: 20px;
+}
+.mop-card a{
+  font-weight: bold;
+    color: gold;
+    text-decoration: none;
+    transition: 0.3s;   
+    font-size: 19px;
+}
+.web{
+  display: grid;
+    grid-template-columns: 380px auto;
+    gap: 33px;   
+}
+.web-card{
+  background-color: black;
+    border-radius: 10px;
+    padding: 40px 30px;
+    color: #f7f7f7;
+     border:2px solid #EEE ;
+    transition: 0.4S;   
+}
+.web-card:hover{
+    transform: translate(-12px);
+    border-color: gold;
+    box-shadow: 0 10px 30px rgba(0,0,0, 0.8);
+}
+.web-card h2{
+   margin-bottom: 10px;
+    font-size: 30px;   
+}
+.web-card p{
+ color: #777;
+     line-height: 1.8;
+     font-size: 17px;
+    margin-bottom: 20px;   
+}
+.web-card a{
+   font-weight: bold;
+    color: gold;
+    text-decoration: none;
+    transition: 0.3s;   
+}
+.about{
+ background-color: #f7f7f7;
+    padding: 100px 0;
+    text-align: center;
+   
+}
+
+.about-o{
+   
+    /* text-align: center; */
+    margin-bottom: 60px;
+}
+.about-o h6{
+    font-size: 25px;
+    color: gold;
+    margin-bottom: 15px;
+}
+.about-o h1{
+    font-size: 45px;
+    color: black;
+    margin-bottom:20px ;
+}
+.about-o h1 span{
+    color: gold;
+}
+.about-o p{
+    font-size: 20px;
+    color: black;
+}
+.web-card{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+ .feature-item {
+    
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+margin-bottom: 42px;
+}
+  .feature-icon {
+    width: 27px;
+    height: 28px;
+    background:#f7f7f7;
+    color:white;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px 5px;
+}
+.about-card a{
+    border-radius: 10px;
+    padding: 15px 6px;
+    color: black;
+    background-color: gold;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.about-card a:hover{
+      color: #fff;
+    background-color:black;
+}
+.about .nav{
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    color: azure;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 5%;
+
+}
+.about .nav span{
+    color: gold;
+}
+.portfolio{
+    padding: 100px 8%;
+    background-color: #f7f7f7;
+}
+.portfolio .hid{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.portfolio .hid h6{
+    color: gold;
+    font-size: 17px;
+}
+.portfolio .hid h1{
+    font-size: 40px;
+    color:black ;
+}
+.portfolio .hid p{
+    font-size: 15px;
+    color: #777;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* كارت المشروع */
+.portfolio-card {
+  background-color: #111319; /* خلفية داكنة للكارت */
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* صورة الكارت */
+.portfolio-card .card-image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.portfolio-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .card-image img {
+  transform: scale(1.05); /* تكبير خفيف للصورة عند التمرير */
+}
+
+/* المحتوى السفلي للرابط والمعلومات */
+.portfolio-card .card-content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-card .card-text h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 0 6px 0;
+}
+
+.portfolio-card .card-text p {
+  color: #9ca3af;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* زر السهم */
+.portfolio-card .arrow-btn {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-card:hover .arrow-btn {
+  background-color: #cbb26a; /* يتحول للون الذهبي عند Hover */
+  color: #000000;
+}
+.container{
+    text-align: center;
+    margin-bottom: 50px;   
+    background-color:rgba(128, 128, 128, 0.681);
+    
+}
+.container .sub-title{
+    color: gold;
+    font-size: 20px;
+}
+.container .section-title{
+    font-size: 40px;
+    color: black;
+}
+.container .section-desc{
+    color: #777;
+    font-size: 15px;
+margin-bottom: 20px;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* كارت الرأي (Testimonial Card) */
+.testimonial-card {
+  background-color: #131926; /* خلفية الكارت */
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05); /* إطار خفيف جداً */
+  text-align: left;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(203, 178, 106, 0.3); /* يتحول الذهبي الخفيف عند التمرير */
+}
+
+/* أيقونة الاقتباس (Double Quote) */
+.testimonial-card .quote-icon {
+  font-size: 60px;
+  color: #cbb26a; /* ذهبي */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: Georgia, serif; /* لجعل الاقتباس أجمل */
+  opacity: 0.2; /* خفيفة في الخلفية */
+}
+
+/* نص رأي العميل */
+.testimonial-text {
+  color: #d1d5db;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  position: relative; /* ليكون فوق الـ quote-icon */
+  z-index: 1;
+}
+
+/* معلومات العميل (الصورة والاسم) */
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* صورة العميل */
+.client-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #131926; /* إطار بنفس لون الخلفية */
+}
+
+/* تفاصيل العميل (الاسم والوظيفة) */
+.client-details h4 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.client-details span {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* النجوم (Rating Stars) */
+.rating-stars {
+  color: #cbb26a; /* لون ذهبي للنجوم */
+  font-size: 16px;
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* كارت واحد في كل صف على الموبايل */
+  }
+}
+/* إعدادات القسم العام */
+.cta-section {
+  padding: 50px 0;
+  background-color: #0b0f17; /* الخلفية الداكنة المتناسقة مع الموقع */
+}
+
+.container {
+ 
+  margin: 25px 8px;
+  padding: 19px 10px;
+}
+
+/* العنوان الفرعي الذهبي */
+.sub-title {
+  color: #cbb26a; /* اللون الذهبي */
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* بطاقة الـ CTA مع الإطار الذهبي الخفيف والتدرج اللوني */
+.cta-card {
+  background: linear-gradient(135deg, #131926 0%, #1a2333 100%);
+  border: 1px solid rgba(203, 178, 106, 0.3);
+  padding: 40px 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.918);
+}
+
+/* النصوص داخل البطاقة */
+.cta-text h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.cta-text p {
+  color: white; /* لون رمادي فاتح هادئ */
+  font-size: 15px;
+  margin: 0;
+}
+
+/* الزر الأساسي (Get Started) */
+.btn-primary {
+  background-color: #cbb26a;
+  color: #000000;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #e5cc80;
+  transform: translateY(-2px);
+  /* box-shadow: 0 5px 15px rgba(203, 178, 106, 0.3); */
+}
+
+/* التجاوب مع الموبايل والشاشات الصغيرة */
+@media (max-width: 768px) {
+  .cta-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .cta-text h2 {
+    font-size: 24px;
+  }
+}
+/* إعدادات الفوتر العامة */
+.footer {
+  background-color: #070a0f; /* خلفية داكنة جداً */
+  /* color: #9ca3af; */
+  padding-top: 70px;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.05); */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* شبكة الأعمدة (4 أعمدة) */
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+/* تنسيق اللوجو والشعار */
+.footer .logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.footer .logo-icon {
+  background-color: #cbb26a; /* الذهبي */
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.brand-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* أيقونات السوشيال ميديا */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  /* border: 1px solid rgba(255, 255, 255, 0.05); */
+}
+
+.social-icons a:hover {
+  background-color: #cbb26a;
+  color: #000;
+  border-color: #cbb26a;
+  transform: translateY(-2px);
+}
+
+/* عناوين الأعمدة */
+.footer-col h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* القوائم وروابط الفوتر */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #cbb26a; 
+}
+
+/* قسم التواصل */
+.contact-col p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* الشريط السفلي لحقوق النشر */
+.footer-bottom {
+  /* border-top: 1px solid rgba(255, 255, 255, 0.05); */
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: white;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-bottom-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #cbb26a;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr; 
+    text-align: center;
+  }
+
+  .footer .logo, .social-icons {
+    justify-content: center;
+  }
+
+  .contact-col p {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+    
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .menu-btn {
+        display: block; 
+    }
+
+   
+    .nav > .go {
+        display: none; 
+    }
+
+    
+    .nav ul {
+        position: fixed;
+        top: 70px;
+        right: -100%; 
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: #0b0f17;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        transition: 0.4s ease;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    
+    .nav ul.active {
+        right: 0;
+    }
+
+    
+    .service-u {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .service-card, .mop-card, .web-card {
+        width: 100% ;
+        max-width: 400px;
+    }
+}
